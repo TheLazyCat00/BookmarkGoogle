@@ -79,7 +79,7 @@ javascript:(function(){
 			`> - 🗺️ (geo:${place.coords.x},${place.coords.y})`;
 
 			navigator.clipboard.writeText(string).then(() => {
-				// -- Success
+				//  -- Success
 			}).catch(err => {
 				console.error('Could not copy text: ', err);
 			});

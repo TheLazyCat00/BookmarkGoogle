@@ -74,6 +74,8 @@ javascript:(function(){
 			`> - 📞 ${place.phone}\n` +
 			`> - 🗺️ (geo:${place.coords.x},${place.coords.y})`;
 
+			console.log(string);
+
 			navigator.clipboard.writeText(string).then(() => {
 				//  -- Success
 			}).catch(err => {

@@ -50,10 +50,6 @@ javascript:(function(){
 		try {
 			const data = JSON.parse(cleanData);
 			
-			// YOUR CODE HERE - PLACE ENDPOINT
-			// - data contains the parsed response array
-			// - url contains the request URL
-			
 			let mainChunk = data[6];
 			let adress = mainChunk[2];
 

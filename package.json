@@ -2,9 +2,9 @@
   "name": "bookmarkgoogle",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "content/main.js",
   "scripts": {
-    "minify": "terser main.js -c -m -o minified.js && git add minified.js"
+    "minify": "terser content/main.js -c -m -o content/minified.js && git add content/minified.js"
   },
   "devDependencies": {
     "husky": "^8.0.3",

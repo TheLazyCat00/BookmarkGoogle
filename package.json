@@ -4,7 +4,7 @@
   "description": "",
   "main": "content/main.js",
   "scripts": {
-    "minify": "terser content/main.js -c -m -o content/minified.js && git add content/minified.js"
+    "minify": "terser script/main.js -c -m -o script/minified.js && git add script/minified.js"
   },
   "devDependencies": {
     "husky": "^8.0.3",

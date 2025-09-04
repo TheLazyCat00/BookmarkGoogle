@@ -61,8 +61,8 @@ javascript:(function(){
 				shortcut: mainChunk[42],
 
 				name: mainChunk[11],
-				strasse: adress[0],
-				ort: adress[1],
+				street: adress[0],
+				place: adress[1],
 
 				phone: mainChunk[178][0][1][1][0],
 				url: mainChunk[7][0],
@@ -74,9 +74,9 @@ javascript:(function(){
 			let string =
 			`### 🌎 [${place.name}](${place.shortcut})\n` +
 			`> - [${place.urlName}](${place.url})\n` +
-			`> - 📍 ${place.strasse}, ${place.ort}\n` +
+			`> - 📍 ${place.street}, ${place.place}\n` +
 			`> - 📞 ${place.phone}\n` +
-			`> - 🗺️ X: ${place.coords.x}, Y: ${place.coords.y}`;
+			`> - 🗺️ (geo:${place.coords.x},${place.coords.y})`;
 
 			navigator.clipboard.writeText(string).then(() => {
 				// -- Success

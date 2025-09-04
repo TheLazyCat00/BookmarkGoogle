@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Bookmark Google Maps", 
+	"version": "1.0",
+	"description": "Auto copy Google Maps location info on click",
+	"permissions": ["clipboardWrite"],
+	"content_scripts": [
+		{
+			"matches": ["*://www.google.com/maps*"],
+			"js": ["content.js"],
+			"run_at": "document_idle"
+		}
+	],
+	"web_accessible_resources": ["script/main.js"]
+}

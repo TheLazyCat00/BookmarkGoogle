@@ -1,6 +1,6 @@
 async function injectBookmarklet() {
 	try {
-		const scriptUrl = chrome.runtime.getURL('script/main.js');
+		const scriptUrl = chrome.runtime.getURL('script/minified.js');
 		const response = await fetch(scriptUrl);
 		let scriptContent = await response.text();
 

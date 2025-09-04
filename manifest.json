@@ -11,5 +11,5 @@
 			"run_at": "document_idle"
 		}
 	],
-	"web_accessible_resources": ["script/main.js"]
+	"web_accessible_resources": ["script/minified.js"]
 }

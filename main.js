@@ -45,7 +45,6 @@ javascript:(function(){
 		let cleanData = responseData;
 		if (responseData.startsWith(")]}'")) {
 			cleanData = responseData.substring(4);
-			console.log('hi');
 		}
 
 		try {

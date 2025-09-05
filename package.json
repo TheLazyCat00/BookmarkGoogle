@@ -4,9 +4,10 @@
   "description": "",
   "main": "content/main.js",
   "scripts": {
-    "minify": "terser script/main.js -c -m -o script/minified.js && node -e \"const fs=require('fs'); fs.writeFileSync('script/minified.js', 'javascript:' + fs.readFileSync('script/minified.js', 'utf8'))\" && git add script/minified.js"
+    "build": "node build.js"
   },
   "devDependencies": {
+    "archiver": "^7.0.1",
     "husky": "^8.0.3",
     "terser": "^5.24.0"
   }

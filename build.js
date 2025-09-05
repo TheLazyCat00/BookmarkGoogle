@@ -19,8 +19,8 @@ async function createZip() {
 		archive.on('error', reject);
 		archive.pipe(output);
 
-		// Add files and directories
 		archive.file('manifest.json', { name: 'manifest.json' });
+		archive.file('content.js', { name: 'content.js' });
 		archive.file('CreateAddonCode.md', { name: 'CreateAddonCode.md' });
 		archive.directory('script/', 'script/');
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "content/main.js",
   "scripts": {
-    "minify": "terser script/main.js -c -m -o script/minified.js && git add script/minified.js"
+    "minify": "terser script/main.js -c -m -o script/minified.js && node -e \"const fs=require('fs'); fs.writeFileSync('script/minified.js', 'javascript:' + fs.readFileSync('script/minified.js', 'utf8'))\" && git add script/minified.js"
   },
   "devDependencies": {
     "husky": "^8.0.3",

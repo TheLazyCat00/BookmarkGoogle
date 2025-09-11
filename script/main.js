@@ -75,7 +75,7 @@ javascript:(function(){
 			`### 🌎 [${place.name}](${place.shortcut})\n` +
 			`> - [${place.urlName}](${place.url})\n` +
 			`> - [📍 ${place.street}, ${place.place}](geo:${place.coords.x},${place.coords.y})\n` +
-			`> - 📞 ${place.phone}\n` +
+			`> - 📞 ${place.phone}\n`
 
 			navigator.clipboard.writeText(string).then(() => {
 				//  -- Success

@@ -6,7 +6,14 @@
 	"permissions": ["clipboardWrite"],
 	"content_scripts": [
 		{
-			"matches": ["*://www.google.com/maps*"],
+			"matches": [
+				"*://www.google.com/maps*",
+				"*://www.google.en/maps*",
+				"*://www.google.de/maps*",
+				"*://www.google.nl/maps*",
+				"*://www.google.fr/maps*",
+				"*://www.google.ch/maps*",
+			],
 			"js": ["content.js"],
 			"run_at": "document_idle"
 		}
